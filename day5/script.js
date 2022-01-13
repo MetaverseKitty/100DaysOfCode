@@ -45,7 +45,7 @@ two.bind("update", function (frameCount) {
       u = mapAndClamp(t, 0.5, aStart, 1 - aEnd, 1, 0)
     }
 
-    shape.width = shapeMin + shapeDiff * easeInOutCubic(u)
+    shape.width = shapeMin + shapeDiff * easeInOutCubic(u) * 2;
   })
 
 })

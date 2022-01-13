@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+@keyframes animate-type {
+  0% {
+    font-variation-settings: "wght" 300, "slnt" 0;
+    letter-spacing: 0;
+  }
+
+  100% {
+    font-variation-settings: "wght" 700, "slnt" -8;
+    letter-spacing: 2px;
+  }
+}
+
+body {
+  font-family: inter;
+  font-size: 24px;
+  line-height: 1.5;
+
+  background-color: #ffffff;
+  background-image: url(sunlight.jpg);
+  background-size: cover;
+  background-repeat:no-repeat;
+  background-position: center center;
+  height: 100vh;
+
+  color: #857979;
+}
+
+header {
+  position: fixed;
+  top: 64px;
+  left: 64px;
+
+  font-size: 88px;
+  font-weight:700;
+  line-height: 1;
+
+  animation: animate-type 5.5s infinite alternate;
+}
+
+p.author {
+  font-size: 18px;
+}
+
+footer {
+  position: fixed;
+  bottom: 64px;
+  left: 64px;
+  
+}
