@@ -1,0 +1,42 @@
+body {
+  margin: 0;
+}
+
+section {
+  background-size: cover;
+	background-position:center;
+	/*this will fix the background to the browser viewport 
+	rather than to the section, creating a reveal effect as we scroll*/
+	background-attachment: fixed;
+}
+
+.section-pen {
+  background-image: url(the-pen.svg);
+  background-color: white;
+  height: 100vh;
+}
+
+.section-mightier {
+  background-image: url(is-mightier.svg);
+  background-color: black;
+  height: 100vh;
+}
+
+.section-than {
+  background-image: url(than.svg);
+  background-color: white;
+  height: 100vh;
+}
+
+.section-sword {
+  background-image: url(the-sword.svg);
+  background-color: black;
+  height: 100vh;
+}
+
+.section-icons {
+  background-image: url(end.svg);
+  background-color: #00f10a;
+  height: 100vh;
+}
+
