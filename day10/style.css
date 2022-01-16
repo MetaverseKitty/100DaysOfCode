@@ -16,6 +16,12 @@ section {
   height: 100vh;
 }
 
+.section-pen-small {
+  background-image: url(the-pen.svg);
+  background-color: white;
+  width: 150px;
+}
+
 .section-mightier {
   background-image: url(is-mightier.svg);
   background-color: black;
@@ -40,3 +46,9 @@ section {
   height: 100vh;
 }
 
+@media (max-width: 800px) {
+  section {
+    background-attachment: scroll;
+    height: 75vw;
+  }
+}
