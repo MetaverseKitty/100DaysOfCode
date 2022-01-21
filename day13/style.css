@@ -21,7 +21,7 @@ header {
   transition: top 2s;
 }
 
-.hide { 
+.hidden { 
   top: -100px;
 }
 
@@ -55,8 +55,7 @@ section img {
   top: 0;
   left: 0;
   width: 100%;
-  font-size:12px;
-
+  font-size: 12px;
 }
 
 .bar {
