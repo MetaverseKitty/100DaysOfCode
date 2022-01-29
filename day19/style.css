@@ -1,0 +1,151 @@
+body {
+	font-family: Work Sans;
+	font-size: 16px;
+	line-height: 1.5;
+	color: white;
+	background-color: black;
+	padding-top: 104px;
+}
+
+	/* we add some padding top to create the white-space for 
+	our fixed header to fit inside of*/
+
+a {
+	color: white;
+	text-decoration: none;
+}
+
+header {
+	/* overflow: hidden; */
+	position:fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding: 20px;
+	/*flexbox is a modern css layout mode that gives us
+	much more power over how elements are positioned */
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	z-index: 2;
+}
+
+
+header h1 {
+/*	float: left; */
+  width: 64px;
+}
+
+header nav {
+	float:right;
+	margin-top: 20px;
+}
+
+header nav a {
+	margin-left: 10px;
+	transition: border 0.3s ease-in;
+	border-bottom: solid 2px rgba(0, 0, 0, 0);
+	padding-bottom: 3px;
+}
+
+.list a img{
+	position: fixed;
+	top: 50%;
+	left: 50%;
+}
+
+header nav a:hover {
+	border-color: #555;
+}
+
+header nav.selected {
+border-color: #fff;
+}
+
+.photos {
+	text-align:center;
+	max-width:1080px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 10px;
+	padding-right: 10px;
+	display: flex;
+	flex-wrap:wrap;
+	align-items: end; 
+	justify-content: center;
+}
+
+.photo {
+	/* inline block gives us the best of both inline and block elements
+	 allowing us to stack them side by side and also align outline-color
+	 elements vertically in the row*/ 
+  /*	display: inline-block;*/ 
+	width: 300px;
+	margin: 10px;
+	/* we can use vertical align to align our rows to bottom/middle/top */
+	vertical-align: bottom;
+	/* by using position element on the parent photo element our overlay will be 
+	positioned in relation to it */
+	position: relative;
+}
+
+.photo img {
+	transition: filter 0.3s;
+}
+
+.photo:hover img {
+	filter:grayxale(100%);
+}
+
+.overlay { 
+	/* by using absolute position we can position things in relation
+	to the page or other parent elements */
+position: absolute;
+top: 0;
+left: 0;
+
+width: 100%;
+height: 100%;
+/* we can specify colors using rgb values and in this case, 
+we can also control the alpha channel which is for transparency */
+background-color:rgb(0, 0, 0, 0.7);
+opacity: 0; 
+transition: all 0.3s;
+z-index: 2;
+}
+
+.photo:hover .overlay {
+	opacity: 1;
+}
+
+.photo h2 {
+position: absolute;
+left: -15px;
+top: -15px;
+font-size: 32px;
+line-height:1.2;
+text-align: left;
+}
+
+.small {
+	width:220px;
+}
+
+.large {
+	width:400px;
+}
+
+footer {
+	padding: 20px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+
+
+footer nav a {
+	width: 16px;
+	margin-left: 5px;
+	display: inline-block;
+}
