@@ -1,0 +1,36 @@
+body {
+  font-family: Roboto;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #47353a;
+}
+
+header {
+  padding: 10px 15px;
+  background-color: pink;
+  overflow: hidden;
+}
+
+header h1 {
+  float: left;
+}
+
+nav {
+  float: right;
+  margin-top: 3px;
+}
+
+nav a {
+  color: #47353a;
+  text-decoration: none;
+  margin-left: 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.hero {
+  background-image: url("hero.jpg");
+  background-size: cover;
+  padding-top: 230px;
+  padding-bottom: 200px;
+}
