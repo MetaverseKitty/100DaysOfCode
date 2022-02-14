@@ -1,0 +1,44 @@
+body {
+  font-family: Playfair Display;
+  font-size:20px;
+  line-height:1.3;
+  background-color:#f4f4f4;
+  color:#0000;
+}
+
+header {
+  background-color: #000;
+  border-top: solid 5px #FEEA34;
+}
+
+/* we apply our flex styles to the inner container
+rather than the header element */
+header container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  width: 75px;
+}
+
+header a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.hero {
+  background-image: url(hero.jpg);
+  padding-top: 110px;
+  padding-bottom: 120px;
+  background-size: cover;
+  background-position: right center;
+}
