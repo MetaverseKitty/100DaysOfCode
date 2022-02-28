@@ -6,6 +6,7 @@ barba.init({
   transitions: [ 
     {
       name: "fade",
+      once() {},
       beforeEnter ({ current, next, trigger }) {
 
         const headerLinks = document.querySelectorAll("header a")
