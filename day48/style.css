@@ -27,7 +27,7 @@ that can be reused and just does one thing */
 
 .intro {
   background-color: #111;
-  background-image: url(https://images.pexels.com/photos/5721337/pexels-photo-5721337.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+  background-image: url(intro.jpg);
   color: #fff;
 }
 
